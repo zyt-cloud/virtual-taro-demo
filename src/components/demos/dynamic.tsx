@@ -30,7 +30,9 @@ export default function DynamicSizeVirtualList() {
               backgroundColor: randomColors[index % randomColors.length],
             }}
             className={index % 2 ? 'demo-list-odd' : 'demo-list-even'}
-          />
+          >
+            {index}
+          </View>
         )}
       </VirtualList>
     </View>
