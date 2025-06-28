@@ -80,8 +80,6 @@ onPageScroll((e) => {
   lanes?: number
   className?: string
   style?: CSSProperties
-  width?: number | string
-  height?: number | string
   itemClassName?: string
   itemStyle?: CSSProperties
 }

@@ -30,7 +30,9 @@ export default function RowVirtualList() {
           instanceRef.current = virtualizer
         }}
       >
-        {({ index }) => <View className={index % 2 ? 'demo-list-odd' : 'demo-list-even'}>第 {index} 行</View>}
+        {({ index }) => (
+          <View className={index % 2 ? 'demo-list-odd' : 'demo-list-even'}>item {index}</View>
+        )}
       </VirtualList>
     </View>
   )

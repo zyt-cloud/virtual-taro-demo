@@ -21,7 +21,7 @@ export default function GridVirtualList() {
         count={10000}
         size={60}
         grid
-        gridSize={[100, 40]}
+        gridSize={[200, 80]}
         gap={10}
         overscan={5}
         onReady={(virtualizer) => {
