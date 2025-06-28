@@ -19,6 +19,7 @@
     "build:qq": "taro build --type qq",
     "build:jd": "taro build --type jd",
     "build:harmony-hybrid": "taro build --type harmony-hybrid",
+    "start": "npm run dev:weapp",
     "dev:weapp": "npm run build:weapp -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:alipay": "npm run build:alipay -- --watch",
@@ -51,7 +52,7 @@
     "@tarojs/taro": "4.1.2",
     "@tarojs/plugin-framework-react": "4.1.2",
     "@tarojs/react": "4.1.2",
-    "@z-cloud/virtual-mini": "1.0.1",
+    "@z-cloud/virtual-mini": "1.0.2",
     "react-dom": "^18.0.0",
     "react": "^18.0.0"
   },
