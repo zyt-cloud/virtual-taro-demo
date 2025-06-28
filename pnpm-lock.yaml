@@ -57,8 +57,11 @@ importers:
         specifier: 4.1.2
         version: 4.1.2(@tarojs/components@4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(react@18.3.1)(rollup@3.29.5))(@tarojs/helper@4.1.2)(@tarojs/shared@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(rollup@3.29.5)
       '@z-cloud/virtual-mini':
-        specifier: 1.0.2
+        specifier: ^1.0.2
         version: 1.0.2
+      '@z-cloud/virtual-taro':
+        specifier: ^1.0.1
+        version: 1.0.1(@tarojs/components@4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(react@18.3.1)(rollup@3.29.5))(@tarojs/taro@4.1.2(@tarojs/components@4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(react@18.3.1)(rollup@3.29.5))(@tarojs/helper@4.1.2)(@tarojs/shared@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(rollup@3.29.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18.0.0
         version: 18.3.1
@@ -1891,8 +1894,22 @@ packages:
   '@z-cloud/virtual-mini@1.0.2':
     resolution: {integrity: sha512-gm/rw6d/ZqR6hjP1JRtsBILmCcsQo2/jmAIN1TaCsJF/hKVNom3zflv3h3bNks6XaG6OKc7kTi8mxg10tXxIKg==}
 
+  '@z-cloud/virtual-mini@1.0.3':
+    resolution: {integrity: sha512-vbgyCfISbhQoO2fLn2RAecQ6NacHfqglEbywz/vaCV+5CQV3VKNSRXtvGIdxaCoMkND6rw7cFZRIZpdaYHwdxw==}
+
+  '@z-cloud/virtual-taro@1.0.1':
+    resolution: {integrity: sha512-H+7TJljlBr+ObyGqMpb5ow5bl/IRFxibgFfJ5+SI9qm9rQDbmvftfU4XTBYHouL0VdxVtbNA8P3ebcvZ+5ecSA==}
+    peerDependencies:
+      '@tarojs/components': '*'
+      '@tarojs/taro': '*'
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
   '@z-cloud/virtual-vanilla@1.0.0':
     resolution: {integrity: sha512-5yaTKDzHP+j8j+a74E2iA520T18E8apz7DyavuCzPWaQDD6biu99ur1QX3Q4B8TGJQTi87/wcSPra93aN8cn0g==}
+
+  '@z-cloud/virtual-vanilla@1.0.1':
+    resolution: {integrity: sha512-lRmzcjSD410OqhO8cLtKA17l7yZq0prVdG3DmcVnEnGLVPfPS6+iYVSbmBjpsYgnvQ3dQDhBSWB2cvmTVz3NKQ==}
 
   abortcontroller-polyfill@1.7.8:
     resolution: {integrity: sha512-9f1iZ2uWh92VcrU9Y8x+LdM4DLj75VE0MJB8zuF1iUnroEptStw+DQ8EQPMUdfe5k+PkB1uUfDQfWbhstH8LrQ==}
@@ -6510,7 +6527,21 @@ snapshots:
     dependencies:
       '@z-cloud/virtual-vanilla': 1.0.0
 
+  '@z-cloud/virtual-mini@1.0.3':
+    dependencies:
+      '@z-cloud/virtual-vanilla': 1.0.1
+
+  '@z-cloud/virtual-taro@1.0.1(@tarojs/components@4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(react@18.3.1)(rollup@3.29.5))(@tarojs/taro@4.1.2(@tarojs/components@4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(react@18.3.1)(rollup@3.29.5))(@tarojs/helper@4.1.2)(@tarojs/shared@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(rollup@3.29.5))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@tarojs/components': 4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(react@18.3.1)(rollup@3.29.5)
+      '@tarojs/taro': 4.1.2(@tarojs/components@4.1.2(@tarojs/helper@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(react@18.3.1)(rollup@3.29.5))(@tarojs/helper@4.1.2)(@tarojs/shared@4.1.2)(@types/react@18.3.23)(postcss@8.5.6)(rollup@3.29.5)
+      '@z-cloud/virtual-mini': 1.0.3
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
   '@z-cloud/virtual-vanilla@1.0.0': {}
+
+  '@z-cloud/virtual-vanilla@1.0.1': {}
 
   abortcontroller-polyfill@1.7.8: {}
 

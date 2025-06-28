@@ -1,5 +1,5 @@
 import { Button, View } from '@tarojs/components'
-import { type VirtualizerInstance, VirtualList } from '../virtual-list'
+import { type VirtualizerInstance, VirtualList } from '@z-cloud/virtual-taro'
 import { randomColors, randomSize } from './utils'
 import { useRef } from 'react'
 

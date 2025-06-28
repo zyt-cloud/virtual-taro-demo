@@ -1,5 +1,5 @@
 import { Button, View } from '@tarojs/components'
-import { VirtualList, type VirtualizerInstance } from '../virtual-list'
+import { VirtualList, type VirtualizerInstance } from '@z-cloud/virtual-taro'
 import { useRef } from 'react'
 
 export default function GridVirtualList() {
