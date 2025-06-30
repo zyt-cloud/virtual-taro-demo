@@ -4,17 +4,9 @@
 
 该组件包含常规虚拟列表、瀑布流、网格 grid
 
-[使用文档](https://github.com/zyt-cloud/virtual-taro-demo) 请查看 pages 对应的页面
+[示例代码](https://github.com/zyt-cloud/virtual-taro-demo) 请查看 pages 对应的页面
 
-## 使用注意事项
-
-跟随页面滚动的虚拟列表需要在页面注册 onPageScroll 事件，具体如下
-
-```ts
-onPageScroll((e) => {
-  instanceRef.value?.onScroll(e)
-})
-```
+[文档参考](https://zyt-cloud.github.io/virtual/index.html)
 
 ## 配置项
 
